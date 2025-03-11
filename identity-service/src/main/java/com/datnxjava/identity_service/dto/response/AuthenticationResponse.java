@@ -10,5 +10,6 @@ import lombok.experimental.FieldDefaults;
 @Builder // create object instead of using constructor
 @FieldDefaults(level = AccessLevel.PRIVATE) //all field by default is private (private String a -> String a)
 public class AuthenticationResponse {
+    String token;
     boolean authenticated;
 }

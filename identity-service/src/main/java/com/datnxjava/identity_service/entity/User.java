@@ -4,8 +4,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDate;
+
 // @entity declare that class is as a table
 @Entity
 public class User {
@@ -44,11 +50,11 @@ public class User {
         this.password = password;
     }
 
-    public String getfirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public void setfirstName(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 

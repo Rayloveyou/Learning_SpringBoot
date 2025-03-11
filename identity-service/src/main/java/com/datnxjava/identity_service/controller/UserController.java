@@ -43,7 +43,7 @@ public class UserController {
     @GetMapping("/{userId}") //if declare @GetMapping("/{userId}"), it will map value into String userId by @PathVariable
     ApiResponse<UserResponse>  getUser(@PathVariable String userId) {
         return ApiResponse.<UserResponse>builder()
-                        .result( userService.getUserById(userId))
+                        .result(userService.getUserById(userId))
                 .build();
     }
 
